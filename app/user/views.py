@@ -8,8 +8,8 @@ from django.contrib.auth.models import Group, User, Permission
 from django.contrib.contenttypes.models import ContentType
 from django.shortcuts import get_object_or_404
 
-customer_group, created = Group.objects.get_or_create(name="Customer")
-owner_group, created = Group.objects.get_or_create(name="Owner")
+# customer_group, created = Group.objects.get_or_create(name="Customer")
+# owner_group, created = Group.objects.get_or_create(name="Owner")
 # restframework allows generic ways to handle apis which can be
 # configured/overrided
 

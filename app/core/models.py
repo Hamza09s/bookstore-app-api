@@ -64,8 +64,9 @@ class Book(models.Model):
 
 class Cart(models.Model):
     user = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE, default=None, null=True
     )
     books = models.ManyToManyField(Book, blank=True)
+    book_id = models.IntegerField(default=1)
+    quantity = models.IntegerField(default=1)
     created_at = models.DateTimeField(auto_now_add=True)

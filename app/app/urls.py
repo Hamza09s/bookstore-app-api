@@ -34,5 +34,5 @@ urlpatterns = [
     ),
     # will use schema above
     path("api/user/", include("user.urls")),
-    # path("api/recipe/", include("recipe.urls")),
+    path("api/bookstore/", include("bookstore.urls")),
 ]

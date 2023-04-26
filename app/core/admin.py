@@ -52,6 +52,6 @@ class UserAdmin(BaseUserAdmin):
 
 
 admin.site.register(models.User, UserAdmin)
-# admin.site.register(models.Blog)
-# admin.site.register(models.Like)
+admin.site.register(models.Book)
+admin.site.register(models.Cart)
 # admin.site.register(models.Comment)
