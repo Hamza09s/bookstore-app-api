@@ -70,3 +70,7 @@ class Cart(models.Model):
     book_id = models.IntegerField(default=1)
     quantity = models.IntegerField(default=1)
     created_at = models.DateTimeField(auto_now_add=True)
+
+class Author(models.Model):
+   user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, default=None, null=True)
+   name = models.CharField(max_length=255)
